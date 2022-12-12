@@ -12,6 +12,7 @@ public class ApiController {
     @RequestMapping(value="/getPage")
     public ModelAndView getPage(ModelAndView modelAndView, String pageName){
         modelAndView.setViewName(pageName);
+        System.out.println(pageName);
         return modelAndView;
     }
 
